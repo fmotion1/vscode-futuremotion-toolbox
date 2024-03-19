@@ -1,0 +1,157 @@
+{
+    "name": "fm-toolbox",
+    "displayName": "Futuremotion Toolbox",
+    "description": "Personal utilities that I use frequently.",
+    "publisher": "Futuremotion",
+    "version": "1.0.0",
+    "icon": "./img/extensionIcon.png",
+    "readme": "README.md",
+    "author": {
+        "name": "Futuremotion"
+    },
+    "galleryBanner": {
+        "color": "#CED1D4",
+        "theme": "light"
+    },
+    "license": "MIT",
+    "licenses": [
+        {
+            "type": "MIT"
+        }
+    ],
+
+    "homepage": "https://github.com/fmotion1/vscode-futuremotion-toolbox",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fmotion1/vscode-futuremotion-toolbox",
+        "docs": "https://github.com/fmotion1/vscode-futuremotion-toolbox/blob/main/README.md"
+    },
+    "bugs": {
+        "url": "https://github.com/fmotion1/vscode-futuremotion-toolbox/issues"
+    },
+    "engines": {
+        "vscode": "^1.87.0"
+    },
+    "categories": [
+        "Formatters",
+        "Testing",
+        "Other"
+    ],
+    "keywords": [
+        "CSS",
+        "Powershell",
+        "Rename",
+        "Rename Variable",
+        "Remove Linebreaks",
+        "Linebreaks",
+        "Compact",
+        "Expand",
+        "Refrences",
+        "Show References",
+        "Variables"
+    ],
+    "activationEvents": [],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "fm-toolbox.removeLineBreaks",
+                "title": "Remove Line Breaks"
+            },
+            {
+                "command": "fm-toolbox.compactCSS",
+                "title": "Compact Selected CSS"
+            },
+            {
+                "command": "fm-toolbox.expandCSS",
+                "title": "Expand Selected CSS"
+            },
+            {
+                "command": "fm-toolbox.renameCSSVariable",
+                "title": "Rename CSS Variable"
+            },
+            {
+                "command": "fm-toolbox.renamePowershellVariable",
+                "title": "Rename Powershell Variable"
+            }
+        ],
+        "menus": {
+            "commandPalette": [
+                {
+                    "command": "fm-toolbox.removeLineBreaks",
+                    "when": "editorHasSelection"
+                },
+                {
+                    "command": "fm-toolbox.compactCSS",
+                    "when": "editorTextFocus && resourceLangId == css"
+                },
+                {
+                    "command": "fm-toolbox.expandCSS",
+                    "when": "editorTextFocus && resourceLangId == css"
+                },
+                {
+                    "command": "fm-toolbox.renameCSSVariable",
+                    "when": "editorTextFocus && resourceLangId == css"
+                },
+                {
+                    "command": "fm-toolbox.renamePowershellVariable",
+                    "when": "editorTextFocus && resourceLangId == powershell"
+                }
+            ],
+            "editor/context": [
+                {
+                    "when": "editorHasSelection",
+                    "command": "fm-toolbox.removeLineBreaks",
+                    "group": "fmtoolbox@1"
+                },
+                {
+                    "when": "editorTextFocus && resourceLangId == css",
+                    "command": "fm-toolbox.compactCSS",
+                    "group": "fmtoolbox@1"
+                },
+                {
+                    "when": "editorTextFocus && resourceLangId == css",
+                    "command": "fm-toolbox.expandCSS",
+                    "group": "fmtoolbox@1"
+                },
+                {
+                    "when": "editorTextFocus && resourceLangId == css",
+                    "command": "fm-toolbox.renameCSSVariable",
+                    "group": "fmtoolbox@1"
+                },
+                {
+                    "when": "editorTextFocus && resourceLangId == powershell",
+                    "command": "fm-toolbox.renamePowershellVariable",
+                    "group": "fmtoolbox@1"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "package": "npm run compile && mkdir build && vsce package -o ./build/fm-toolbox.vsix",
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "lint": "eslint src --ext ts",
+        "test": "vscode-test"
+    },
+    "devDependencies": {
+        "@types/mocha": "^10.0.6",
+        "@types/node": "18.x",
+        "@types/vscode": "^1.87.0",
+        "@typescript-eslint/eslint-plugin": "^6.19.1",
+        "@typescript-eslint/parser": "^6.19.1",
+        "@vscode/test-cli": "^0.0.4",
+        "@vscode/test-electron": "^2.3.9",
+        "@vscode/vsce": "^2.24.0",
+        "@primer/primitives": "^7.15.12",
+        "chroma-js": "^2.4.2",
+        "color": "^4.2.3",
+        "nodemon": "^3.1.0",
+        "eslint": "^8.56.0",
+        "mocha": "^10.3.0",
+        "rimraf": "^5.0.5",
+        "typescript": "^5.3.3"
+    }
+}

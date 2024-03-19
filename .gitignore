@@ -1,0 +1,15 @@
+out/
+dist/
+node_modules/
+.vscode-test/
+.vscode/
+*.vsix
+ref/
+backup/
+src/backup/
+src/ref/
+package.json.bak
+*.code-workspace
+build/
+ignore/
+mdcss/
