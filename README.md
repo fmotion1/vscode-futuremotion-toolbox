@@ -1,7 +1,7 @@
 <h1 align="center"> Futuremotion VS-Toolbox </h1> <br>
 <p align="center">
-  <a href="https://gitpoint.co/">
-    <img alt="GitPoint" title="GitPoint" src="./img/logo.png" width="250">
+  <a href="https://github.com/fmotion1/vscode-futuremotion-toolbox">
+    <img alt="VS Toolbox" title="VS Toolbox" src="./img/logo.png" width="250">
   </a>
 </p>
 
@@ -44,7 +44,7 @@ VS-Toolbox is planned to be a general utility extension that implements a broad 
 
 ## Feedback
 
-Feel free to submit bugs by [filing an issue](https://github.com/fmotion1/vscode-fm-toolbox/issues/new) or [requesting feature updates](https://github.com/fmotion1/vscode-fm-toolbox/issues/new). If you wish to contribute, please take a quick look at the [guidelines](./CONTRIBUTING.md).
+Feel free to submit bugs by [filing an issue](https://github.com/fmotion1/vscode-futuremotion-toolbox/issues/new) or [requesting feature updates](https://github.com/fmotion1/vscode-futuremotion-toolbox/issues/new). If you wish to contribute, please take a quick look at the [guidelines](./CONTRIBUTING.md).
 
 
 

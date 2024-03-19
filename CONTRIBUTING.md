@@ -35,7 +35,7 @@ If you're interested in contributing: Feel free to fork the project and implemen
 
 
 ## Reporting Bugs
-**We use [GitHub issues](https://github.com/fmotion1/vscode-fm-toolbox/issues) to track bugs and errors. If you run into a problem with the plugin, open an [Issue](https://github.com/fmotion1/vscode-fm-toolbox/issues/new).**
+**We use [GitHub issues](https://github.com/fmotion1/vscode-futuremotion-toolbox/issues/) to track bugs and errors. If you run into a problem with the plugin, open an [Issue](https://github.com/fmotion1/vscode-futuremotion-toolbox/issues/new).**
 
 
 <!-- omit in toc -->
@@ -53,7 +53,7 @@ If you're interested in contributing: Feel free to fork the project and implemen
 
 ## Suggesting Enhancements
 
-**Enhancement suggestions are also tracked as [GitHub issues](https://github.com/fmotion1/vscode-fm-toolbox/issues).**
+**Enhancement suggestions are also tracked as [GitHub issues](https://github.com/fmotion1/vscode-futuremotion-toolbox/issues/).**
 
 - Use a **clear and descriptive title** for the issue to identify the suggestion.
 - Provide a **step-by-step description of the suggested enhancement** in as many details as possible.
